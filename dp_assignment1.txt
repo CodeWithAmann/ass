@@ -1,0 +1,84 @@
+1. Write a simple program to take input from the user.
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a string:");
+        String input = scanner.nextLine();
+        System.out.println("You entered: " + input);
+        scanner.close();
+    }
+}
+2. How do you concatenate two strings in Java? Give an example.
+
+In Java, you can concatenate two strings using the + operator or the concat() method.
+
+
+String str1 = "Hello";
+String str2 = "World";
+String result = str1 + " " + str2; // Using the + operator
+System.out.println(result); // Output: Hello World
+
+// Using the concat() method
+String result2 = str1.concat(" ").concat(str2);
+System.out.println(result2); // Output: Hello World
+
+3. How do you find the length of a string in Java? Give an example.
+
+In Java, you can find the length of a string using the length() method.
+
+String str = "Hello, World!";
+int length = str.length();
+System.out.println("Length of the string: " + length); // Output: 13
+
+4. How do you compare two strings in Java? Give an example.
+
+In Java, you can compare two strings using the equals() method for content comparison and compareTo() method for lexicographical comparison.
+
+String str1 = "hello";
+String str2 = "hello";
+
+// Content comparison
+boolean contentComparison = str1.equals(str2);
+System.out.println("Content Comparison: " + contentComparison); // Output: true
+
+// Lexicographical comparison
+int lexicographicalComparison = str1.compareTo(str2);
+System.out.println("Lexicographical Comparison: " + lexicographicalComparison); // Output: 0 (equal)
+
+5. Write a program to find the length of the string "Helloworld".
+
+
+public class Main {
+    public static void main(String[] args) {
+        String str = "Helloworld";
+        int length = str.length();
+        System.out.println("Length of the string: " + length); // Output: 10
+    }
+}
+6. Write a program to check if the letter 'e' is present in the word "Umhello".
+
+
+public class Main {
+    public static void main(String[] args) {
+        String str = "Umhello";
+        boolean isPresent = str.contains("e");
+        System.out.println("Is 'e' present in the word? " + isPresent); // Output: true
+    }
+}
+7. Write a program to delete all occurrences of the substring "ell" from the string "Hello (hello, goodbye)".
+
+public class Main {
+    public static void main(String[] args) {
+        String str = "Hello (hello, goodbye)";
+        String result = str.replace("ell", "");
+        System.out.println("Modified string: " + result); // Output: Ho (ho, gooby)
+    }
+}
+
+
+
+
+
